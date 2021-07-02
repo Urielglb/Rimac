@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <title>Mundo Rimac</title>
+</head>
+<body>
+   <header class="flex-row" style="justify-content: space-between;">
+        <img src="./assets/img/logo.svg" alt="logo" id="logo">
+        <div class="flex-row">
+            <p class="md-display" style="color: #494F66; padding:.5em 0;">¿No tienes cuenta?</p>
+            <button id="register-btn">REGÍSTRATE</button>
+        </div>
+   </header> 
+    <div id="content">
+        <h1 class="text-center" style="color: #494F66">Inicia sesión</h1>
+        <div class="flex-column" style="justify-content: center;" >
+            <div class="flex-row mx-auto border" style="padding: 5px; margin-bottom: 1em; background-color: white;">
+                <select name="DNI" style="padding: 1em; border: none; border-right: solid 1px #C5CBE0;">
+                    <option value="null" selected>DNI</option>
+                </select>
+                <input  style="border: none; padding-left: 5px;" type="text" placeholder="Nº de documento">
+            </div>
+            <input class="mx-auto border" style="width: 250px; padding: 1em; margin-bottom: 1em;" type="password" placeholder="Contraseña">
+            <div class="flex-row mx-auto" style="margin-bottom: 1em;">
+                <label><input type="checkbox" id="cbox1" value="first_checkbox"> Recordar datos</label>
+                <a style="margin-left: 15px; padding-top: 2px; font-size: 12px;" href="">¿Olvidaste tu contraseña?</a>
+            </div>
+            <button class="mx-auto" id="login" style="margin-bottom: 1em;">INGRESAR</button>
+            <p class="mx-auto" style="color: #A3ABCC;">o</p>
+            <div class="flex-row mx-auto" style="font-size: 12px;">
+                <p style="margin-right: 10px;">¿No tienes cuenta?</p>
+                <a href="" style="margin-top: 12px;">Regístrate</a>
+            </div>
+        </div>
+    </div>
+    <footer class="grid">
+            <div class="flex-row first-responsive-grid">
+            <img src="./assets/img/rimac.svg" alt="rimac" id="rimac">
+            <p style="color: #676F8F;">© 2020 RIMAC Seguros y Reaseguros. Todos los derechos reservados</p>
+        </div>
+        <div class="flex-row second-responsive-grid" style="justify-content: center;">
+                <div class="flex-row">
+                    <img src="./assets/img/apple.svg" alt="apple" class="mini-logo">
+                    <a style="color: #EF3340">App store</a>
+                </div>
+                <span class="divider"></span>
+                <div class="flex-row">
+                    <img src="./assets/img/playstore.svg" alt="apple" class="mini-logo">
+                    <a style="color: #EF3340;">Google Play</a>
+                </div>
+        </div>
+    </footer>
+</body>
+</html>

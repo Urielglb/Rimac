@@ -1,0 +1,123 @@
+body {
+    font-family: 'Lato';font-size: 22px;
+}
+
+header {
+    padding: 1em 3em;
+}
+
+footer {
+    padding: 2em 2em 0 2em;
+    font-size: 12px;
+}
+
+label {
+    font-size: 12px;
+    color: #A3ABCC;
+}
+
+.border {
+    border-radius: 5px;
+    border: solid 1px #C5CBE0
+}
+
+.text-center {
+    text-align: center;
+}
+
+.flex-row {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.flex-column {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.md-display {
+    display: none;
+}
+
+.mx-auto {
+    margin: 0 auto;
+}
+
+.mini-logo {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
+
+.divider {
+    height: 15px;
+    width: 0;
+    margin: 0 1em;
+    border: solid #E4E8F7;
+    border-radius: 25px;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+
+.first-responsive-grid {
+    grid-column:1/13 ;
+}
+
+.second-responsive-grid {
+    grid-column: 1/13;
+}
+
+#logo {
+    width: 125px;
+}
+
+#register-btn {
+    font-size: 16px;
+    margin-left: 2em;
+    padding: 10px    1em;
+    color: #6769FF;
+    border: solid #6769FF;
+    background-color: white;
+    border-radius: 25px;
+}
+
+#content {
+    padding: 1em;
+    min-height: 90vh;
+    background: url('./assets/img/sala-grande.png') no-repeat center;
+}
+
+#rimac {
+    width: 100px;
+    margin-right: 1em;
+}
+
+#login {
+    padding: 1em 7.5em;
+    color: white;
+    background-color: #EF3340;
+    border-radius: 5px;
+    border: none;
+}
+
+@media (min-width: 768px) {
+    .md-display{
+        display: inline;
+    }
+
+    .first-responsive-grid {
+        grid-column:1/7 ;
+    }
+    
+    .second-responsive-grid {
+        grid-column: 7/13;
+    }
+
+    #logo {
+        width: 300px;
+    }
+}
